@@ -23,5 +23,8 @@ Aim for 2x/day to 1x/every 2-3 days — keep it active, not overwhelming.
 
 ## Concepts / early ideas
 
+- **Necessity is the mother of invention** — Spencer's dad's line, how it shaped his design philosophy, how it shows up in everything he builds. Personal and grounded. Connects biography to practice.
+- **Software is a living thing, not a shipped product** — the mindset behind active development, why "finished" is the wrong frame for software. Might be article-worthy instead.
+
 - The remote tabletop question — can Rolling Home grow beyond the physical table? Probably too early to write this.
 - Game endings are a design problem, not just a technical one — the philosophy behind what belongs in an app and what doesn't.
