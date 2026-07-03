@@ -15,6 +15,13 @@ We agreed to build a gamification / achievement system into the portfolio site. 
 - **Flavor text.** Each achievement description reveals something about Spencer, not just "you did a thing."
 - **Dedicated achievements page.** Visible log of earned vs still-hidden achievements.
 
+## Next sessions — content work
+
+- **Project pages + blog posts in the same sitting.** Pick a project, build the page, write the post. That's the unit of work.
+- **Projects still needing pages:** D3 Companion, Miranor, Prism, Interactive Stories, Gaia Plant Care
+- **Blog ideas file:** `content/blog-ideas.md` — add to this regularly so there's always something to pick from rather than inventing topics on the fly
+- **Articles list:** needs to be created. Articles are deeper and more evergreen than blog posts — "Software is a living thing, not a shipped product" is the first candidate. Create `content/article-ideas.md` next session.
+
 ## Still to design before building
 
 - Full achievement list (what behaviors matter, what tiers make sense)
