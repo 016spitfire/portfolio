@@ -38,15 +38,24 @@ const proseStyles = {
   hr: { border: 'none', borderTop: '1px solid var(--border)', margin: '2rem 0' },
 }
 
-const components = Object.fromEntries(
-  Object.entries(proseStyles).map(([tag, style]) => [
-    tag,
-    ({ node, ...props }) => {
-      const Tag = tag
-      return <Tag style={style} {...props} />
-    },
-  ])
-)
+const components = {
+  ...Object.fromEntries(
+    Object.entries(proseStyles).map(([tag, style]) => [
+      tag,
+      ({ node, ...props }) => {
+        const Tag = tag
+        return <Tag style={style} {...props} />
+      },
+    ])
+  ),
+  a: ({ node, href, children, ...props }) => {
+    const isExternal = href && href.startsWith('http')
+    if (isExternal) {
+      return <a href={href} target="_blank" rel="noreferrer" {...props}>{children}</a>
+    }
+    return <Link to={href}>{children}</Link>
+  },
+}
 
 export default function BlogPost() {
   const { slug } = useParams()
