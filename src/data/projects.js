@@ -10,9 +10,10 @@ export const projects = [
   },
   {
     name: 'D3 Companion',
+    slug: 'd3-companion',
     status: 'Active',
     tech: ['React', 'JavaScript', 'PWA'],
-    url: null,
+    url: 'https://d3-companion-web.vercel.app/',
     description:
       'A seasonal companion app for Diablo III that tracks progression, generates personalized next-step recommendations, and reduces the overhead of planning efficient season runs.',
   },
