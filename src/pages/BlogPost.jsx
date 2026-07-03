@@ -4,6 +4,12 @@ import { loadPosts } from '../lib/parseFrontmatter.js'
 
 const posts = loadPosts()
 
+function readingTime(content) {
+  const words = content.trim().split(/\s+/).length
+  const minutes = Math.ceil(words / 200)
+  return `${minutes} min read`
+}
+
 const proseStyles = {
   h1: { color: 'var(--text-heading)', margin: '1.5rem 0 0.75rem', fontSize: '1.75rem' },
   h2: { color: 'var(--text-heading)', margin: '1.5rem 0 0.5rem', fontSize: '1.3rem' },
@@ -59,7 +65,8 @@ const components = {
 
 export default function BlogPost() {
   const { slug } = useParams()
-  const post = posts.find(p => p.slug === slug)
+  const index = posts.findIndex(p => p.slug === slug)
+  const post = posts[index]
 
   if (!post) {
     return (
@@ -70,25 +77,64 @@ export default function BlogPost() {
     )
   }
 
+  const prev = posts[index + 1] || null
+  const next = posts[index - 1] || null
+
   return (
     <div style={{ maxWidth: 680 }}>
       <div style={{ marginBottom: 40 }}>
-        <Link
-          to="/blog"
-          style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}
-        >
+        <Link to="/blog" style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>
           ← Blog
         </Link>
       </div>
 
       <div style={{ marginBottom: 32 }}>
-        <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: 8 }}>
-          {post.date}
-        </p>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: 0 }}>
+            {post.date}
+          </p>
+          <span style={{ color: 'var(--border)' }}>·</span>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: 0 }}>
+            {readingTime(post.content)}
+          </p>
+        </div>
         <h1 style={{ marginBottom: 0 }}>{post.title}</h1>
       </div>
 
       <ReactMarkdown components={components}>{post.content}</ReactMarkdown>
+
+      {(prev || next) && (
+        <div style={{
+          borderTop: '1px solid var(--border)',
+          marginTop: 48,
+          paddingTop: 32,
+          display: 'flex',
+          justifyContent: 'space-between',
+          gap: 16,
+        }}>
+          {prev ? (
+            <Link to={`/blog/${prev.slug}`} style={{ textDecoration: 'none', flex: 1 }}>
+              <div style={{ color: 'var(--text-muted)', fontSize: '0.75rem', marginBottom: 4 }}>
+                ← Older
+              </div>
+              <div style={{ color: 'var(--text-heading)', fontSize: '0.9rem', fontWeight: 500 }}>
+                {prev.title}
+              </div>
+            </Link>
+          ) : <div style={{ flex: 1 }} />}
+
+          {next ? (
+            <Link to={`/blog/${next.slug}`} style={{ textDecoration: 'none', flex: 1, textAlign: 'right' }}>
+              <div style={{ color: 'var(--text-muted)', fontSize: '0.75rem', marginBottom: 4 }}>
+                Newer →
+              </div>
+              <div style={{ color: 'var(--text-heading)', fontSize: '0.9rem', fontWeight: 500 }}>
+                {next.title}
+              </div>
+            </Link>
+          ) : <div style={{ flex: 1 }} />}
+        </div>
+      )}
     </div>
   )
 }

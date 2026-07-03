@@ -2,6 +2,7 @@ export const projects = [
   {
     name: 'Rolling Home',
     slug: 'rolling-home',
+    featured: true,
     status: 'Live',
     tech: ['React', 'JavaScript', 'Tailwind CSS', 'PWA'],
     url: 'https://rolling-home.vercel.app',
