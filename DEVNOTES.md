@@ -22,6 +22,10 @@ We agreed to build a gamification / achievement system into the portfolio site. 
 - **Blog ideas file:** `content/blog-ideas.md` — add to this regularly so there's always something to pick from rather than inventing topics on the fly
 - **Articles list:** needs to be created. Articles are deeper and more evergreen than blog posts — "Software is a living thing, not a shipped product" is the first candidate. Create `content/article-ideas.md` next session.
 
+## Revisit when content grows
+
+- **Blog search** — add when there are 10+ posts. Not worth building for two. Revisit in a week or two.
+
 ## Still to design before building
 
 - Full achievement list (what behaviors matter, what tiers make sense)
