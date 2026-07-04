@@ -9,6 +9,7 @@ import About from './pages/About.jsx'
 import RollingHome from './pages/projects/RollingHome.jsx'
 import D3Companion from './pages/projects/D3Companion.jsx'
 import Prism from './pages/projects/Prism.jsx'
+import SvgConverter from './pages/projects/SvgConverter.jsx'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/projects/rolling-home" element={<RollingHome />} />
           <Route path="/projects/d3-companion" element={<D3Companion />} />
           <Route path="/projects/prism" element={<Prism />} />
+          <Route path="/projects/svg-converter" element={<SvgConverter />} />
         </Routes>
       </main>
     </>

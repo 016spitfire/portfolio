@@ -23,6 +23,6 @@ export function loadPosts() {
       const { data, content } = parseFrontmatter(raw)
       return { slug, content, ...data }
     })
-    .filter(post => new Date(post.publishDate || post.date) <= new Date())
+    .filter(post => import.meta.env.DEV || new Date(post.publishDate || post.date) <= new Date())
     .sort((a, b) => new Date(b.date) - new Date(a.date))
 }

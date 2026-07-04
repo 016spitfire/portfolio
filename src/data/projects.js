@@ -36,6 +36,15 @@ export const projects = [
       'A TypeScript narrative engine library for multi-perspective storytelling. Characters accumulate knowledge, relationships, and history — and the same scene reads differently depending on who is experiencing it.',
   },
   {
+    name: 'SVG to React Converter',
+    slug: 'svg-converter',
+    status: 'Complete',
+    tech: ['Node.js'],
+    url: null,
+    description:
+      'A CLI script that converts SVG files into ready-to-use React components. Built out of necessity on a client project where manual conversion was eating four days a week.',
+  },
+  {
     name: 'Interactive Stories',
     status: 'Complete',
     tech: ['React', 'JavaScript'],
