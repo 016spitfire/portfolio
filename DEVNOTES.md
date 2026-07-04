@@ -18,7 +18,19 @@ We agreed to build a gamification / achievement system into the portfolio site. 
 ## Next sessions — content work
 
 - **Project pages + blog posts in the same sitting.** Pick a project, build the page, write the post. That's the unit of work.
-- **Projects still needing pages:** D3 Companion, Miranor, Prism, Interactive Stories, Gaia Plant Care
+- **Projects still needing pages (built/active):** Miranor, Interactive Stories, Gaia Plant Care
+- **Concept/design-stage projects also deserve pages** — not filler, they show how Spencer thinks as a designer, not just what he's shipped. These are worth writing.
+- **Concept project pages to build:**
+  - Prism Authoring Tool (GUI companion to the Prism library — see memory for scope)
+  - Temporal Bridge (game concept, Spencer + Steph — keep mechanics abstract until ready to reveal)
+  - Perspective Shift (narrative game powered by Prism)
+  - Cauldron (medieval cooking puzzle game with Tom — on hold)
+  - Card Slinger (combat archetype concept)
+  - Castle Defense (cooperative board game using playing cards, Rummikub tiles, Risk pieces — rules complete)
+  - Seasonal Idle Game (idle game with seasonal prestige, Diablo-inspired season journey)
+  - Mini-Puzzles (monorepo of skinnable puzzle components)
+  - Afrikaans Learning App (flashcard app — future)
+  - Quest Home Companion (dice roller first, then full companion)
 - **Blog ideas file:** `content/blog-ideas.md` — add to this regularly so there's always something to pick from rather than inventing topics on the fly
 - **Articles list:** needs to be created. Articles are deeper and more evergreen than blog posts — "Software is a living thing, not a shipped product" is the first candidate. Create `content/article-ideas.md` next session.
 
