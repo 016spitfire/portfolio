@@ -8,6 +8,7 @@ import Contact from './pages/Contact.jsx'
 import About from './pages/About.jsx'
 import RollingHome from './pages/projects/RollingHome.jsx'
 import D3Companion from './pages/projects/D3Companion.jsx'
+import Prism from './pages/projects/Prism.jsx'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects/rolling-home" element={<RollingHome />} />
           <Route path="/projects/d3-companion" element={<D3Companion />} />
+          <Route path="/projects/prism" element={<Prism />} />
         </Routes>
       </main>
     </>

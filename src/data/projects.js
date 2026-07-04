@@ -28,6 +28,7 @@ export const projects = [
   },
   {
     name: 'Prism',
+    slug: 'prism',
     status: 'Prototype',
     tech: ['TypeScript'],
     url: null,
