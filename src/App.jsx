@@ -10,6 +10,7 @@ import RollingHome from './pages/projects/RollingHome.jsx'
 import D3Companion from './pages/projects/D3Companion.jsx'
 import Prism from './pages/projects/Prism.jsx'
 import SvgConverter from './pages/projects/SvgConverter.jsx'
+import GaiaPlantCare from './pages/projects/GaiaPlantCare.jsx'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/projects/d3-companion" element={<D3Companion />} />
           <Route path="/projects/prism" element={<Prism />} />
           <Route path="/projects/svg-converter" element={<SvgConverter />} />
+          <Route path="/projects/gaia-plant-care" element={<GaiaPlantCare />} />
         </Routes>
       </main>
     </>

@@ -54,10 +54,11 @@ export const projects = [
   },
   {
     name: 'Gaia Plant Care',
+    slug: 'gaia-plant-care',
     status: 'Alpha',
     tech: ['React Native', 'JavaScript', 'Firebase'],
-    url: null,
+    url: 'https://gaia-plant-care-system.vercel.app/',
     description:
-      'A plant care companion app in early development.',
+      'A plant care companion app built for my wife Steph. Tracks plants, watering schedules, and reminders — with custom fields for whatever information matters to you.',
   },
 ]
