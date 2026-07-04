@@ -5,6 +5,7 @@ import Projects from './pages/Projects.jsx'
 import Blog from './pages/Blog.jsx'
 import BlogPost from './pages/BlogPost.jsx'
 import Contact from './pages/Contact.jsx'
+import About from './pages/About.jsx'
 import RollingHome from './pages/projects/RollingHome.jsx'
 import D3Companion from './pages/projects/D3Companion.jsx'
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
           <Route path="/projects/rolling-home" element={<RollingHome />} />
           <Route path="/projects/d3-companion" element={<D3Companion />} />
         </Routes>

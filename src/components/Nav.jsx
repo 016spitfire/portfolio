@@ -44,6 +44,7 @@ export default function Nav() {
       <div style={innerStyle}>
         <NavLink to="/" style={brandStyle}>Spencer Kittle</NavLink>
         <div style={linksStyle}>
+          <NavLink to="/about" style={linkStyle}>About</NavLink>
           <NavLink to="/projects" style={linkStyle}>Projects</NavLink>
           <NavLink to="/blog" style={linkStyle}>Blog</NavLink>
           <NavLink to="/contact" style={linkStyle}>Contact</NavLink>
