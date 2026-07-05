@@ -20,11 +20,12 @@ export const projects = [
   },
   {
     name: 'Miranor',
+    slug: 'miranor',
     status: 'Active rewrite',
-    tech: ['React', 'JavaScript', 'Node.js'],
+    tech: ['React', 'JavaScript', 'Redux', 'SCSS', 'GSAP'],
     url: null,
     description:
-      'An RPG nine years in the making. Originally a tabletop game, now being rewritten as a web application. The systems have been redesigned several times as my engineering experience has grown.',
+      'A fully digital RPG nine years in the making. Combat, crafting, economy, exploration, quests, and character progression — built in a world with its own vocabulary and systems designed from the ground up.',
   },
   {
     name: 'Prism',
