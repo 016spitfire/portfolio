@@ -11,6 +11,7 @@ import D3Companion from './pages/projects/D3Companion.jsx'
 import Prism from './pages/projects/Prism.jsx'
 import SvgConverter from './pages/projects/SvgConverter.jsx'
 import GaiaPlantCare from './pages/projects/GaiaPlantCare.jsx'
+import InteractiveStories from './pages/projects/InteractiveStories.jsx'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/projects/prism" element={<Prism />} />
           <Route path="/projects/svg-converter" element={<SvgConverter />} />
           <Route path="/projects/gaia-plant-care" element={<GaiaPlantCare />} />
+          <Route path="/projects/interactive-stories" element={<InteractiveStories />} />
         </Routes>
       </main>
     </>

@@ -46,11 +46,12 @@ export const projects = [
   },
   {
     name: 'Interactive Stories',
+    slug: 'interactive-stories',
     status: 'Complete',
     tech: ['React', 'JavaScript'],
-    url: null,
+    url: 'https://interactive-story-app.vercel.app/',
     description:
-      'A deployed branching narrative application. Shipped and working.',
+      'A branching narrative app and the sandbox where the engine behind it was built. Three stories, three different branching philosophies — from dramatically divergent to fully convergent.',
   },
   {
     name: 'Gaia Plant Care',
